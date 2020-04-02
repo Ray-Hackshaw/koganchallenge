@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Basic web-development exercise for the Kogan Coding Challenge -->
+<!-- Ray Hackshaw/ray@rayhackshaw.com/ray.hackshaw.com -->
+<!-- Completed using VSCode, tested through Mozilla Firefox, Google Chrome, Andriod 7.0 and iOS 11 -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Average Cubic Weight - Air Conditioners">
+        <meta name="author" content="Ray Hackshaw">
+        <title>&#10063 Average Cubic Weight</title>
+        <!-- General styling -->
+        <link rel="stylesheet" href="css/kogan.css">
+        <!-- Utilised only for the Github icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <li><a class="fa fa-github" href='https://github.com/Ray-Hackshaw/' alt="Github" target="_blank"></a></li>
+        <h1>Average Cubic Weight</h1>
+        <h2>Kogan Coding Challenge </h2>
+        <!-- Buttons that enable JavaScript calculations/refreshing of the page -->
+        <div>
+            <button id="buttons" onclick='getObjects();'>Calculate</button>
+            <button id="buttons2" onclick="window.location.reload();">Reset</button>
+        </div>
+        <!-- Underscore values are replaced using JavaScript after getObjects() with Calculate onclick event -->
+        <div id="entire">
+            <p>The average cubic weight</p>
+            for<span id="brief"> _ </span> air conditioning unit(s):
+            <p></p>
+            <span id="output" > ____ </span> cm&sup3/kg
+            <!-- Source for AWS API Endpoint as provided by Kogan -->
+            <p>API Endpoint found <a href="http://wp8m3he1wt.s3-website-ap-southeast-2.amazonaws.com/api/products/1" target="_blank">here.</a>
+            </p>
+        </div>
+        <!-- Linking JavaScript for getObjects()-->    
+        <script src="js/kogan.js"></script>
+    </body>
+</html> 
